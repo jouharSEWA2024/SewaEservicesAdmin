@@ -1,0 +1,17 @@
+﻿<!--**********************************
+    Footer start
+***********************************-->
+@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@using Microsoft.AspNetCore.Http.Features
+@using Microsoft.AspNetCore.Mvc.Localization;
+@using Microsoft.AspNetCore.Localization;
+@inject IViewLocalizer localizer
+<footer class="footer">
+    <div class="copyright">
+        <p>@localizer["Copyright"] © @localizer["Designed"] &amp; @localizer["Developed by"] <a href="https://sewa.gov.ae/" target="_blank">@localizer["SEWA"]</a> @DateTime.Now.Year</p>
+    </div>
+</footer>
+<!--**********************************
+    Footer end
+***********************************-->

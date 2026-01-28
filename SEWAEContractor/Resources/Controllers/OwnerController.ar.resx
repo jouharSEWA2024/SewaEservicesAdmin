@@ -1,0 +1,662 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Additional Load" xml:space="preserve">
+    <value>إضافة أحمال</value>
+  </data>
+  <data name="Additional Meter" xml:space="preserve">
+    <value>إضافة عداد</value>
+  </data>
+  <data name="and" xml:space="preserve">
+    <value>و</value>
+  </data>
+  <data name="Area" xml:space="preserve">
+    <value>المنطقة</value>
+  </data>
+  <data name="Assistant Eng" xml:space="preserve">
+    <value>مساعد مهندس</value>
+  </data>
+  <data name="Business partner exists in SEWA, Please fill the remaining information" xml:space="preserve">
+    <value>العميل مسجل لدى هيئة كهرباء ومياه وغاز الشارقة ، يرجى استكمال باقي المعلومات</value>
+  </data>
+  <data name="Business Partner not found in SEWA System" xml:space="preserve">
+    <value> رقم العميل غير موجود في نظام هيئة كهرباء ومياه الشارقة</value>
+  </data>
+  <data name="Business partner not found in SEWA System, cannot proceed further." xml:space="preserve">
+    <value>رقم العميل غير موجود في نظام هيئة كهرباء ومياه وغاز الشارقة، لا يمكن المتابعة</value>
+  </data>
+  <data name="Business partner not found in SEWA System. Please proceed to create the business partner." xml:space="preserve">
+    <value>رقم العميل غير موجود في نظام هيئة كهرباء ومياه وغاز الشارقة. يرجى المتابعة لإنشاء الشريك التجاري</value>
+  </data>
+  <data name="Cannot apply for Additional Load" xml:space="preserve">
+    <value>ا يمكن التقديم لإضافة الأحمال</value>
+  </data>
+  <data name="cannot apply for First Inspection" xml:space="preserve">
+    <value>لا يمكن التقديم للتفتيش الأول</value>
+  </data>
+  <data name="Cannot apply for the service" xml:space="preserve">
+    <value>ا يمكن التقديم لطلب الخدمة</value>
+  </data>
+  <data name="cannot be mapped to" xml:space="preserve">
+    <value>لا يمكن ربطه ب</value>
+  </data>
+  <data name="cannot be unmapped from" xml:space="preserve">
+    <value>ا يمكن الغاء الربط من</value>
+  </data>
+  <data name="Cannot verify electrical contractor trade license with Sharjah Economic Department. Please contact Sharjah Economic Department." xml:space="preserve">
+    <value>ا يمكن التحقق من رخصة مقاول الكهرباء مع دائرة التنمية الاقتصادية في الشارقة، يرجى مراجعة دائرة التنمية الاقتصادية في الشارقة.</value>
+  </data>
+  <data name="Company Registration" xml:space="preserve">
+    <value>تسجيل الشركة</value>
+  </data>
+  <data name="Completion Certificate Renew" xml:space="preserve">
+    <value>تجديد شهادة االفحص</value>
+  </data>
+  <data name="Consultant Approved Successfully" xml:space="preserve">
+    <value> تمت الموافقة على الاستشاري بنجاح</value>
+  </data>
+  <data name="Consultant/Contractor has been authorised successfully" xml:space="preserve">
+    <value>تمت الموافقة على الاستشاري/المقاول بنجاح</value>
+  </data>
+  <data name="Date of connection statement" xml:space="preserve">
+    <value>إفادة تاريخ التوصيل</value>
+  </data>
+  <data name="Dear Consultant, your validity has expired. Please renew the registration with SEWA" xml:space="preserve">
+    <value>عزيزي الاستشاري، انتهت صلاحية رخصتك لدى اقتصادية الشارقة. يرجى تجديد التسجيل لدى هيئة كهرباء ومياه وغاز الشارقة</value>
+  </data>
+  <data name="Dear Contractor, your validity has expired. Please renew the registration with SEWA" xml:space="preserve">
+    <value>عزيزي المقاول، لقد انتهت صلاحيتك. يرجى تجديد التسجيل لدى هيئة كهرباء ومياه وغاز الشارقة</value>
+  </data>
+  <data name="Dear Customer" xml:space="preserve">
+    <value>عميلنا العزيز</value>
+  </data>
+  <data name="Dear Customer, an error is occurred while creating SR please try again later." xml:space="preserve">
+    <value>عزيزي العميل، حدث خطأ أثناء إنشاء طلب الخدمة يرجى المحاولة مرة أخرى لاحقاً.</value>
+  </data>
+  <data name="Dear Main Contractor, your validity has expired. Please renew the registration with SEWA" xml:space="preserve">
+    <value> عزيزي المستخدم، يرجى القيام بالتسجيل لدى هيئة كهرباء ومياه وغاز الشارقة حيث أنك غير مسجل استشاري/ مقاول رئيسي / مقاول.</value>
+  </data>
+  <data name="Dear user, Please do the registration with SEWA as you are not registered as SEWA Consultant/Contractor" xml:space="preserve">
+    <value> عزيزي المستخدم، يرجى القيام بالتسجيل لدى هيئة كهرباء ومياه وغاز الشارقة حيث أنك غير مسجل كاستشاري/مقاول لدى الهيئة</value>
+  </data>
+  <data name="Dear user, Please do the registration with SEWA as you are not registered as SEWA Consultant/Contractor/Main Contractor" xml:space="preserve">
+    <value>عزيزي المستخدم، برجاء التسجيل لدى هيئة كهرباء ومياه الشارقة لأنك غير مسجل كمستشار/مقاول/مقاول رئيسي في هيئة كهرباء ومياه الشارقة</value>
+  </data>
+  <data name="Dear User, your project status with Sharjah Municipality is still below 65%, therefor you cannot apply for Final drawing service." xml:space="preserve">
+    <value>عزيزي المستخدم، حالة مشروعك لدى بلدية الشارقة لا تزال أقل من 65%، لذلك لا يمكنك التقديم على خدمة اعتماد مخططات نهائية.</value>
+  </data>
+  <data name="Dear User, your project status with Sharjah Municipality is still below 90%, therefor you cannot apply for Final connection service." xml:space="preserve">
+    <value>عزيزي المستخدم، حالة مشروعك لدى بلدية الشارقة لا تزال أقل من 90%، لذلك لا يمكنك التقديم على خدمة التوصيل انهائي.</value>
+  </data>
+  <data name="Dear User,you are not authorised to apply for government project" xml:space="preserve">
+    <value> عزيزي المستخدم، غير مصرح لك بالتقديم للمشروع الحكومي.</value>
+  </data>
+  <data name="Decorating Shops" xml:space="preserve">
+    <value>تصاريح الديكور</value>
+  </data>
+  <data name="Demolition Request" xml:space="preserve">
+    <value>طلب الهدم</value>
+  </data>
+  <data name="Down-grade" xml:space="preserve">
+    <value>تخفيض الفئة</value>
+  </data>
+  <data name="Drawing" xml:space="preserve">
+    <value>المخططات</value>
+  </data>
+  <data name="Electrical contractor not found in SEWA System, therefor you cannot proceed further." xml:space="preserve">
+    <value>مقاول الكهرباء غير موجود في نظام هيئة كهرباء ومياه وغاز الشارقة، لذلك لا يمكن متابعة الطلب</value>
+  </data>
+  <data name="Electrical contractor Trade License is invalid. Please enter valid trade number." xml:space="preserve">
+    <value>رخصة مقاول الكهرباء غير صحيحة، يرجى إدخال رقم الرخصة الصحيح.</value>
+  </data>
+  <data name="Electrical contractor trade license with Sharjah Economic Department has expired. Please contact Sharjah Economic Department." xml:space="preserve">
+    <value>انتهت صلاحية رخصة مقاول الكهرباء مع دائرة التنمية الاقتصادية في الشارقة، يرجى مراجعة دائرة التنمية الاقتصادية في الشارقة.</value>
+  </data>
+  <data name="Electrical Eng" xml:space="preserve">
+    <value>مهندس كهرباء</value>
+  </data>
+  <data name="Electricity" xml:space="preserve">
+    <value>الكهرباء</value>
+  </data>
+  <data name="Emirates ID is invalid. Please enter valid Emirates ID" xml:space="preserve">
+    <value> الهوية الإماراتية غير صالحة، يرجى إدخال هوية إماراتية سارية المفعول.</value>
+  </data>
+  <data name="Emirates ID/Unified No is invalid. Please enter valid Emirates ID/Unified No" xml:space="preserve">
+    <value>الهوية الإماراتية/الرقم الموحد غير صالح. يرجى إدخال رقم هوية إماراتي/رقم موحد صالح</value>
+  </data>
+  <data name="Error in uploading file" xml:space="preserve">
+    <value>خطأ في تحميل الملف</value>
+  </data>
+  <data name="Error While Creating Account, Please try after some time" xml:space="preserve">
+    <value>خطأ أثناء إنشاء الحساب، يرجى المحاولة لاحقاً</value>
+  </data>
+  <data name="Error While Creating Business Partner, Please try after some time" xml:space="preserve">
+    <value>خطأ أثناء إنشاء رقم العميل، الرجاء المحاولة لاحقاً</value>
+  </data>
+  <data name="Error while uploading Documents" xml:space="preserve">
+    <value>خطأ أثناء تحميل المستندات</value>
+  </data>
+  <data name="Error while uploading file, please try after some time" xml:space="preserve">
+    <value>خطأ أثناء رفع الملف، يرجى المحاولة لاحقاً</value>
+  </data>
+  <data name="Error while uploading Service Document" xml:space="preserve">
+    <value>خطأ أثناء تحميل مستند الخدمة</value>
+  </data>
+  <data name="Error while verifying OTP" xml:space="preserve">
+    <value>خطأ أثناء التحقق من رقم التعريف الشخصي</value>
+  </data>
+  <data name="Examination" xml:space="preserve">
+    <value>اختبار</value>
+  </data>
+  <data name="Exception Occured, Please try again" xml:space="preserve">
+    <value> حدث استثناء، يرجى المحاولة مرة أخرى</value>
+  </data>
+  <data name="File Already Exists" xml:space="preserve">
+    <value>الملف موجود بالفعل</value>
+  </data>
+  <data name="File Reuploaded successfully" xml:space="preserve">
+    <value>تم إعادة رفع الملف بنجاح</value>
+  </data>
+  <data name="File Uploaded successfully, faced issue while updating Status of request" xml:space="preserve">
+    <value>&#x8;تم رفع الملف بنجاح، ولكن حدثت مشكلة أثناء تحديث حالة الطلب</value>
+  </data>
+  <data name="Final Connection" xml:space="preserve">
+    <value>التوصيل النهائي</value>
+  </data>
+  <data name="Final Connection SR is completed, cannot apply for First Inspection" xml:space="preserve">
+    <value>اكتمال طلب خدمة التوصيل النهائي، لا يمكن تطبيقها على التفتيش الأولى</value>
+  </data>
+  <data name="Final Connection service request status is in" xml:space="preserve">
+    <value> حالة طلب التوصيل النهائي هي</value>
+  </data>
+  <data name="First" xml:space="preserve">
+    <value>أولاً</value>
+  </data>
+  <data name="First Inspection cannot be applied, against Final Connection service request." xml:space="preserve">
+    <value>ا يمكن تطبيق التفتيش الأول مقابل طلب خدمة التوصيل النهائي.</value>
+  </data>
+  <data name="First Inspection cannot be applied, against Final Drawing service request" xml:space="preserve">
+    <value>ا يمكن تطبيق التفتيش الأول، مقابل طلب خدمة اعتماد المخطط النهائي.</value>
+  </data>
+  <data name="Fourth" xml:space="preserve">
+    <value>الرابع</value>
+  </data>
+  <data name="Gas" xml:space="preserve">
+    <value>الغاز</value>
+  </data>
+  <data name="General NOC" xml:space="preserve">
+    <value>شهادة عدم ممانعة </value>
+  </data>
+  <data name="Government Code" xml:space="preserve">
+    <value>الرقم الحكومي</value>
+  </data>
+  <data name="has been mapped to" xml:space="preserve">
+    <value>تم ربطه بـ</value>
+  </data>
+  <data name="has been unmapped from" xml:space="preserve">
+    <value>تم إلغاء التعيين من</value>
+  </data>
+  <data name="Inspection Appointment" xml:space="preserve">
+    <value>موعد التفتيش</value>
+  </data>
+  <data name="Inspection Appointment cannot be created, please try again later." xml:space="preserve">
+    <value>يتعذر إنشاء موعد التفتيش، يرجى المحاولة لاحقاً.</value>
+  </data>
+  <data name="Inspection Appointment could not be updated against service request" xml:space="preserve">
+    <value>تعذّر تحديث موعد التفتيش مقابل طلب الخدمة المدخل</value>
+  </data>
+  <data name="Inspection Appointment updated against service request" xml:space="preserve">
+    <value> تم تحديث موعد التفتيش مقابل طلب الخدمة المدخل</value>
+  </data>
+  <data name="Invalid Contract Account" xml:space="preserve">
+    <value>حساب المشروع غير صالح</value>
+  </data>
+  <data name="Invalid Model State" xml:space="preserve">
+    <value> حالة النموذج غير صالحة</value>
+  </data>
+  <data name="Invalid OTP. Please use the last received OTP" xml:space="preserve">
+    <value>كلمة المرور غير صالحة، يرجى استخدام آخر كلمة مرور تم استلامها</value>
+  </data>
+  <data name="Invalid Service request number." xml:space="preserve">
+    <value>رقم طلب خدمة غير صالح.</value>
+  </data>
+  <data name="is greater than 15MB. Please upload files less than 15 MB" xml:space="preserve">
+    <value> أكبر من 15 ميجابايت. يرجى تحميل ملفات أقل من 15 ميجابايت</value>
+  </data>
+  <data name="is greater than 5MB. Please upload files less than 5 MB" xml:space="preserve">
+    <value>أكبر من 5 ميجابايت. يرجى تحميل ملفات أقل من 5 ميجابايت</value>
+  </data>
+  <data name="Mobile number is not updated. Kindly update the number with ICA." xml:space="preserve">
+    <value>رقم الهاتف غير محدث، يرجى تحديث الرقم من خلال الهيئة الاتحادية للهوية والجنسية.</value>
+  </data>
+  <data name="Mobile number not updated in SEWA System, kindly update it." xml:space="preserve">
+    <value>رقم الهاتف غير محدث في نظام هيئة كهرباء ومياه وغاز الشارقة، يرجى تحديث الرقم.</value>
+  </data>
+  <data name="NOC" xml:space="preserve">
+    <value>شهادة عدم ممانعة</value>
+  </data>
+  <data name="OTP has expired, Please try again" xml:space="preserve">
+    <value> انتهت صلاحية كلمة المرور، يرجى المحاولة مرة أخرى</value>
+  </data>
+  <data name="OTP Verified successsfully" xml:space="preserve">
+    <value>تم التحقق من رقم التعريف الشخصي بنجاح</value>
+  </data>
+  <data name="Please choose atleast One Service" xml:space="preserve">
+    <value>يرجى اختيار خدمة واحدة على الأقل</value>
+  </data>
+  <data name="Please choose atleast one transformer" xml:space="preserve">
+    <value>يرجى اختيار محول واحد على الأقل</value>
+  </data>
+  <data name="Please choose new or renew" xml:space="preserve">
+    <value>يرجى اختيار جديد أو تجديد</value>
+  </data>
+  <data name="Please choose only one Service" xml:space="preserve">
+    <value>يرجى اختيار خدمة واحدة فقط</value>
+  </data>
+  <data name="Please choose the account from the list" xml:space="preserve">
+    <value> يرجى اختيار الحساب من القائمة
+ </value>
+  </data>
+  <data name="Please enter Contract Account" xml:space="preserve">
+    <value>يرجى إدخال رقم الحساب</value>
+  </data>
+  <data name="Please enter email in correct format" xml:space="preserve">
+    <value>يرجى إدخال البريد الإلكتروني بالصيغة الصحيحة</value>
+  </data>
+  <data name="Please enter Inspection service request." xml:space="preserve">
+    <value>يرجى إدخال رقم طلب خدمة التفتيش</value>
+  </data>
+  <data name="Please enter mandatory fields" xml:space="preserve">
+    <value>يرجى إدخال الحقول الإلزامية</value>
+  </data>
+  <data name="Please enter mobile no" xml:space="preserve">
+    <value> يرجى إدخال رقم الهاتف المتحرك</value>
+  </data>
+  <data name="Please enter mobile no in mentioned format 0**-*******" xml:space="preserve">
+    <value> يرجى إدخال رقم الهاتف المتحرك بالصيغة المذكورة 0**-*******</value>
+  </data>
+  <data name="Please enter Final drawing/ Final Connection service request." xml:space="preserve">
+    <value>يرجى إدخال رقم خدمة اعتماد المخططات/التوصيل النهائي.</value>
+  </data>
+  <data name="Please find the below OTP" xml:space="preserve">
+    <value>الرجاء الاطلاع على كلمة المرور لمرة واحدة أدناه</value>
+  </data>
+  <data name="Please provide valid identity details" xml:space="preserve">
+    <value>يرجى تقديم بيانات هوية صالحة</value>
+  </data>
+  <data name="Please select atleast one sub category" xml:space="preserve">
+    <value>الرجاء تحديد فئة فرعية واحدة على الأقل</value>
+  </data>
+  <data name="Please Select Category from" xml:space="preserve">
+    <value>يرجى اختيار الفئة من</value>
+  </data>
+  <data name="Please select Issuing Authority" xml:space="preserve">
+    <value>الرجاء تحديد جهة الإصدار</value>
+  </data>
+  <data name="Please select SubService" xml:space="preserve">
+    <value>يرجى اختيار خدمة فرعية</value>
+  </data>
+  <data name="Please update electrical contractor trade license expiry details with Sharjah Economic Department" xml:space="preserve">
+    <value>يرجى تحديث بيانات انتهاء صلاحية رخصة مقاول كهرباء مع دائرة التنمية الاقتصادية في الشارقة</value>
+  </data>
+  <data name="Please update your contact and license details with Sharjah Economic Department" xml:space="preserve">
+    <value>يرجى تحديث بيانات الاتصال والترخيص الخاصة بك لدى الدائرة التنمية الاقتصادية في الشارقة.</value>
+  </data>
+  <data name="Please update your contact details with Sharjah Economic Department" xml:space="preserve">
+    <value>يرجى تحديث بيانات الاتصال الخاصة بك لدى دائرة التنمية الاقتصادية في الشارقة.</value>
+  </data>
+  <data name="Please update your license expiry details with Sharjah Economic Department" xml:space="preserve">
+    <value>يرجى تحديث بيانات الرخصة المنتهية لدى دائرة التنمية الاقتصادية في الشارقة.</value>
+  </data>
+  <data name="Please upload" xml:space="preserve">
+    <value>يرجى التحميل</value>
+  </data>
+  <data name="Please upload all the required document" xml:space="preserve">
+    <value>يرجى تحميل جميع الوثائق المطلوبة</value>
+  </data>
+  <data name="Please Upload File" xml:space="preserve">
+    <value>يرجى تحميل الملف</value>
+  </data>
+  <data name="Please upload the documents" xml:space="preserve">
+    <value>يرجى تحميل الوثائق</value>
+  </data>
+  <data name="Please Upload the drawing file in correct format" xml:space="preserve">
+    <value>يرجى تحميل المخطط بالصيغة الصحيحة.</value>
+  </data>
+  <data name="Please upload the file in (PDF/JPG/JPEG/PNG/DWG) Format" xml:space="preserve">
+    <value>يرجى تحميل الملف بصيغة (PDF/JPG/JPEG/PNG/DWG)</value>
+  </data>
+  <data name="Please verify the OTP" xml:space="preserve">
+    <value>يرجى التحقق بواسطة OTP</value>
+  </data>
+  <data name="Plot number" xml:space="preserve">
+    <value>رقم قطعة الأرض</value>
+  </data>
+  <data name="Provided Electrical Contractor details are not valid, please enter valid details" xml:space="preserve">
+    <value>بيانات مقاول الكهرباء المقدمة غير صحيحة، يرجى إدخال البيانات الصحيحة</value>
+  </data>
+  <data name="Regards" xml:space="preserve">
+    <value>تحياتنا</value>
+  </data>
+  <data name="Renewal" xml:space="preserve">
+    <value>التجديد</value>
+  </data>
+  <data name="Residential to Commercial - Normal" xml:space="preserve">
+    <value>تحويل سكني إلى تجاري- عادي</value>
+  </data>
+  <data name="Residential to Commercial - Urgent" xml:space="preserve">
+    <value>تحويل سكني إلى تجاري- عاجل</value>
+  </data>
+  <data name="Road NOC" xml:space="preserve">
+    <value>شهادة عدم الممانعة (طرق)</value>
+  </data>
+  <data name="Second" xml:space="preserve">
+    <value>ثانية</value>
+  </data>
+  <data name="Senior Eng" xml:space="preserve">
+    <value>مهندس أول</value>
+  </data>
+  <data name="Service" xml:space="preserve">
+    <value>الخدمة</value>
+  </data>
+  <data name="Service Request already exists for the Contract Account :" xml:space="preserve">
+    <value>طلب الخدمة موجود مسبقاً على نفس رقم الحساب</value>
+  </data>
+  <data name="Service Request is created successfully for" xml:space="preserve">
+    <value>تم إنشاء طلب الخدمة بنجاح لـ</value>
+  </data>
+  <data name="Service Request is updated against" xml:space="preserve">
+    <value>تم تحديث طلب الخدمة</value>
+  </data>
+  <data name="SEWA" xml:space="preserve">
+    <value>هيئة كهرباء ومياه وغاز الشارقة</value>
+  </data>
+  <data name="Sharjah Economic Department Service is down. Please try after some time" xml:space="preserve">
+    <value>خدمة الدائرة الاقتصادية بالشارقة معطلة. يرجى المحاولة لاحقاً</value>
+  </data>
+  <data name="Shifting Request" xml:space="preserve">
+    <value>طلب نقل خطوط الخدمة</value>
+  </data>
+  <data name="Shop Drawing" xml:space="preserve">
+    <value>تحديث اعتماد مخطط</value>
+  </data>
+  <data name="Final drawing status is in" xml:space="preserve">
+    <value>حالة طلب مخطط المحل</value>
+  </data>
+  <data name="Something went wrong" xml:space="preserve">
+    <value>حدث خطأ ما</value>
+  </data>
+  <data name="The premise is already authorised for consultant" xml:space="preserve">
+    <value>تم ترخيص المشروع للاستشاري.</value>
+  </data>
+  <data name="successfully" xml:space="preserve">
+    <value>تم التحقق بنجاح</value>
+  </data>
+  <data name="Supervisor" xml:space="preserve">
+    <value>مشرف</value>
+  </data>
+  <data name="Temporary Connection" xml:space="preserve">
+    <value>التوصيل المؤقت</value>
+  </data>
+  <data name="The AreaName field is required." xml:space="preserve">
+    <value>اسم المنطقة مطلوب</value>
+  </data>
+  <data name="The entered premise does not belong to the owner" xml:space="preserve">
+    <value>المشروع المدخل لا يطابق اسم المالك.</value>
+  </data>
+  <data name="The Mobile number is not in the required format. Kindly update with Sharjah Economic Department." xml:space="preserve">
+    <value>رقم الهاتف المتحرك ليس بالصيغة المطلوبة. يرجى التحديث مع دائرة التنمية الاقتصادية في الشارقة.</value>
+  </data>
+  <data name="The Mobile number is not in the required format. Kindly update with ICA." xml:space="preserve">
+    <value>رقم الهاتف المتحرك ليس بالصيغة المطلوبة. يرجى التحديث مع الهيئة الاتحادية للهوية والجنسية.</value>
+  </data>
+  <data name="The Mobile number is not in the required format. Kindly update with Sharjah Electricity, Water &amp; Gas Authority." xml:space="preserve">
+    <value>رقم الهاتف المتحرك ليس بالصيغة المطلوبة. يرجى التحديث مع هيئة كهرباء ومياه وغاز الشارقة.</value>
+  </data>
+  <data name="The provided service request is either closed or cancelled." xml:space="preserve">
+    <value>رقم طلب الخدمة إما مغلق أو ملغي.</value>
+  </data>
+  <data name="The provided service request is not eligible for next inspection." xml:space="preserve">
+    <value>طلب الخدمة المقدم غير مؤهل للتفتيش التالي.</value>
+  </data>
+  <data name="The entered service request entered does not belong to Inspection service." xml:space="preserve">
+    <value>رقم طلب الخدمة المدخل لا يندرج تحت فئة التفتيش</value>
+  </data>
+  <data name="The entered service request entered does not belong to Final Connection service." xml:space="preserve">
+    <value>رقم طلب الخدمة المدخل لا ينتمى الى خدمة التوصيل النهائي.</value>
+  </data>
+  <data name="The entered service request entered does not belong to Final drawing service." xml:space="preserve">
+    <value>رقم طلب الخدمة المدخل لا ينتمى الى خدمة اعتماد المخطط النهائي.</value>
+  </data>
+  <data name="The Uploaded file" xml:space="preserve">
+    <value>الملف الذي تم تحميله</value>
+  </data>
+  <data name="Third" xml:space="preserve">
+    <value>ثالث</value>
+  </data>
+  <data name="The entered Trade License is invalid. Please enter the correct number." xml:space="preserve">
+    <value>الرخصة التجارية المدخلة غير صالحة. يرجى إدخال الرقم الصحيح.</value>
+  </data>
+  <data name="Upgradation" xml:space="preserve">
+    <value>تحديث الفئة</value>
+  </data>
+  <data name="User Added Successfully" xml:space="preserve">
+    <value>تمت إضافة المستخدم بنجاح</value>
+  </data>
+  <data name="UserName/Email already exists" xml:space="preserve">
+    <value>اسم المستخدم/البريد الإلكتروني موجود</value>
+  </data>
+  <data name="Verify the Identitiy of the Customer" xml:space="preserve">
+    <value>يرجى التحقق من هوية العميل.</value>
+  </data>
+  <data name="Water" xml:space="preserve">
+    <value>المياه</value>
+  </data>
+  <data name="We are facing delay, while sending SMS. Please try after some time" xml:space="preserve">
+    <value>نواجه تأخيرًا أثناء إرسال الرسائل النصية القصيرة. يرجى المحاولة لاحقاً</value>
+  </data>
+  <data name="We are facing technical issue at the moment, please try again later, If issue persists please contact SEWA" xml:space="preserve">
+    <value>نحن نواجه مشكلة فنية في الوقت الحالي، يرجى المحاولة مرة أخرى لاحقًا، وإذا استمرت المشكلة، فيرجى الاتصال بهيئة كهرباء ومياه وغاز الشارقة.</value>
+  </data>
+  <data name="We faced some issue while adding user, please try again later" xml:space="preserve">
+    <value>لقد واجهنا مشكلة أثناء إضافة المستخدم، يرجى المحاولة مرة أخرى لاحقًا</value>
+  </data>
+  <data name="Work Clearance" xml:space="preserve">
+    <value>شهادة إنجاز أعمال</value>
+  </data>
+  <data name="You have been authorised to apply for the Government Project of" xml:space="preserve">
+    <value>لقد تم تفويضك بالتقدم بطلب للحصول على مشروع حكومي</value>
+  </data>
+  <data name="Your license with Sharjah Economic Department has expired. Please renew the license." xml:space="preserve">
+    <value>انتهت صلاحية رخصتك لدى دائرة التنمية الاقتصادية في الشارقة. يرجى تجديد الرخصة.</value>
+  </data>
+  <data name="The provided ID is not matching with Sharjah Town Planning Department, therefor you cannot proceed further.&#xA;Please send mail to helpdesk@sdtps.gov.ae" xml:space="preserve">
+    <value>المعرف المُدخل غير مُطابق لبيانات دائرة تخطيط و المساحة، لذا لا يُمكنك المُتابعة. يُرجى إرسال بريد إلكتروني إلى helpdesk@sdtps.gov.ae</value>
+  </data>
+  <data name="The provided Transaction ID  expired, kindly contact Sharjah Town Planning Department for renewal." xml:space="preserve">
+    <value>رقم خارطة الأرض المدخل منتهية الصلاحية ، يرجى مراجعة دائرة التخطيط والمساحة في الشارقة للتجديد.</value>
+  </data>
+  <data name="Please enter Town Planning Transaction ID" xml:space="preserve">
+    <value>الرجاء إدخال معرف معاملة تخطيط (الخارطة)</value>
+  </data>
+  <data name="Please enter a valid Town Planning Transaction ID" xml:space="preserve">
+    <value>يرجى ادخال الرقم الصحيح لخارطة الأرض.</value>
+  </data>
+  <data name="The provided Transaction ID from Town Planning is not issued for Residential/Commercial Purpose" xml:space="preserve">
+    <value>رقم خارطة الأرض المدخل غير مستخدم لغرض السكني/الاستثماري، يرجى مراجعة دائرة التخطيط والمساحة في الشارقة.</value>
+  </data>
+  <data name="Invalid plot" xml:space="preserve">
+    <value>مؤامرة غير صالحة</value>
+  </data>
+  <data name="The mentioned area has been changed, kindly update the site plan in Sharjah Town Planning Department." xml:space="preserve">
+    <value>لقد تغيرت المنطقة المذكورة، يرجى تحديث خارطة الأرض في دائرة التخطيط والمساحة.</value>
+  </data>
+  <data name="Gas Alteration" xml:space="preserve">
+    <value>تعديل/إضافة خط غاز</value>
+  </data>
+  <data name="Dear User, you are not authorized to apply , as premise information from Town Planning does not match with the assigned project. Please contact the Town Planning Department for further assistance." xml:space="preserve">
+    <value>عزيزي المستخدم، أنت غير مخول للتقديم وذلك بسبب اختلاف بيانات خارطة الأرض عن المشروع المقدم. يرجى مراجعة دائرة التخطيط والمساحة.</value>
+  </data>
+  <data name="Dear User, you are not authorised to apply , as your validity for the project has expired" xml:space="preserve">
+    <value>عزيزي المستخدم، لا يُسمح لك بالتقديم نظرًا لانتهاء صلاحية المشروع الخاص بك.</value>
+  </data>
+  <data name="As per Town Planning records, the plot has been merged and the original plot cannot be identified. Please contact the Town Planning Department for further assistance" xml:space="preserve">
+    <value>وفقًا لسجلات دائرة التخطيط و المساحة ، تم دمج قطعة الأرض، ولا يمكن تحديد القطعة. يُرجى التواصل مع دائرة التخطيط و المساحة لتحديث البيانات.</value>
+  </data>
+  <data name="As per Town Planning the provided plot map is not issued for Government Project. Please contact the Town Planning Department for further assistance." xml:space="preserve">
+    <value>وفقًا لسجلات دائرة التخطيط و المساحة ، الخارطة المدخلة ليست لمشاريع حكومية. يُرجى التواصل مع دائرة التخطيط و المساحة لتحديث البيانات.</value>
+  </data>
+  <data name="We are not getting any Record from Town Planning, you cannot proceed further." xml:space="preserve">
+    <value>لا يمكن الاستكمال حيث لم يتم العثور علي اي بيانات في دائرة التخطيط و المساحة</value>
+  </data>
+  <data name="The provided premise details are not matching with our system, please contact MSD" xml:space="preserve">
+    <value>تفاصيل المبنى لا تتطابق مع بيانات المتوفره في النظام ، يرجى التواصل مع الخدمات المشتركة</value>
+  </data>
+  <data name="We are facing connectivity issue with ICA. please try after some time" xml:space="preserve">
+    <value>نواجه مشكلة في الاتصال مع ICA. يُرجى المحاولة بعد قليل.</value>
+  </data>
+  <data name="We are facing connectivity issue with Sharjah Economic . please try after some time" xml:space="preserve">
+    <value>نواجه مشكلة في الاتصال مع SEDD. يُرجى المحاولة بعد قليل.</value>
+  </data>
+  <data name="We are facing connectivity issue with DTPS . please try after some time" xml:space="preserve">
+    <value>نواجه مشكلة في الاتصال مع DTPS. يُرجى المحاولة بعد قليل.</value>
+  </data>
+  <data name="The premise information is missing for the entered account, please contact MSD" xml:space="preserve">
+    <value>معلومات العقار غير متوفره  للحساب المدخل، يرجى الاتصال بـ MSD</value>
+  </data>
+  <data name="The provided Transaction ID from Town Planning is expired and there is no valid ownership in real estate registration department" xml:space="preserve">
+    <value>انتهت صلاحية رقم الخارطة المقدم من تخطيط والمساحة ولا يوجد ملكية فعالة في  التسجيل العقاري</value>
+  </data>
+  <data name="There is no valid ownership in real estate registration department with the provided site plan" xml:space="preserve">
+    <value>لا يوجد ملكية فعالة في دائرة التسجيل العقاري مع مخطط
+المقدم</value>
+  </data>
+  <data name="The Plot is not available in GIS of DTPS, please contact Town Planning Department at helpdesk@sdtps.gov.ae" xml:space="preserve">
+    <value>لا تتوفر رقم القطعة في نظام المعلومات الجغرافية الخاص بدائرة التخطيط العمراني والبلديات، يرجى التواصل مع إدارة التخطيط العمراني على helpdesk@sdtps.gov.ae</value>
+  </data>
+  <data name="We are facing connectivity issue with Real Estate Department. Please try after some time." xml:space="preserve">
+    <value>نواجه مشكلة في الاتصال بدائرة التسجيل العقاري. يُرجى المحاولة بعد قليل.</value>
+  </data>
+  <data name="We are unable to proceed with your request as the project category received from Town Planning differs from the one selected. Please contact the Town Planning Department at helpdesk@sdtps.gov.ae" xml:space="preserve">
+    <value>لا يمكننا متابعة طلبك نظرًا لاختلاف فئة المشروع التي تلقيناها من التخطيط و المساحة عن الفئة المختارة. يُرجى التواصل مع إدارة تخطيط المدن عبر البريد الإلكتروني helpdesk@sdtps.gov.ae</value>
+  </data>
+  <data name="The owner information is missing in Sharjah Town Planning Department, therefore you cannot proceed further. Please send mail to helpdesk@sdtps.gov.ae" xml:space="preserve">
+    <value>معلومات المالك غير موجوده في دائرة تخطيط و المساحة، لذا لا يمكنك المتابعة. يُرجى إرسال بريد إلكتروني إلى helpdesk@sdtps.gov.ae</value>
+  </data>
+</root>

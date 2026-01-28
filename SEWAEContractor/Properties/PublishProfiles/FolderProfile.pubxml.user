@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\ContractorPortal\SEWAEContractor\bin\Release\net7.0\publish\</_PublishTargetUrl>
+    <History>True|2024-02-12T07:02:26.3412585Z;False|2024-02-12T07:47:33.7970953+04:00;False|2024-02-12T07:46:21.5162811+04:00;True|2024-01-31T16:58:38.9496389+04:00;False|2024-01-31T16:54:17.7389680+04:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,32 @@
+﻿@{
+    @using Microsoft.AspNetCore.Mvc.Localization;
+    @using Microsoft.Extensions.Configuration
+    @inject IConfiguration Configuration
+
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <partial name="Ventic/_Meta" />
+    <title>@ViewBag.Title @Configuration.GetSection("DefaultValue")["Title"]</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="~/Ventic/images/favicon1.png">
+    <!-- Bottom CSS -->
+    <link href="~/ventic/vendor/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="~/ventic/css/style.css" rel="stylesheet" class="main-css">
+</head>
+<body>
+    <div id="main-wrapper">
+        <partial name="Ventic/_SEWAHeader_LayoutBlank" />
+    </div>
+    @RenderBody()
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="~/ventic/vendor/global/global.min.js"></script>
+    <script src="~/ventic/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+    <script src="~/ventic/js/custom.min.js"></script>
+    <script src="~/ventic/js/deznav-init.js"></script>
+</body>
+</html>

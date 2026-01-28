@@ -1,0 +1,332 @@
+﻿    <!--**********************************
+            Sidebar start
+        ***********************************-->
+@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+@using Microsoft.AspNetCore.Http.Features
+@using Microsoft.AspNetCore.Mvc.Localization;
+@using Microsoft.AspNetCore.Localization;
+@inject IViewLocalizer localizer
+<div class="deznav">
+    <div class="deznav-scroll">
+        <ul class="metismenu" id="menu">
+            
+           @*  <li>
+                <a href="@Url.Action("Dashboard","home")" class="ai-icon" aria-expanded="false">
+                    <i class="flaticon-025-dashboard"></i>
+                    <span class="nav-text">Dashboard</span>
+                </a>
+            </li>
+             *@
+            @if(HttpContextAccessor.HttpContext.Session.GetString("UserType")=="Consultant")
+            {
+                <li>
+                    <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                        <i class="flaticon-018-clock"></i>
+                        <span class="nav-text">@localizer["Service Request"]</span>
+                    </a>
+                    <ul aria-expanded="false">
+                        @* @if (HttpContextAccessor.HttpContext.Session.GetString("MainContractorRole") == "YES" || HttpContextAccessor.HttpContext.Session.GetString("RoadContractorRole") == "YES")
+                        {
+                            @if (HttpContextAccessor.HttpContext.Session.GetString("TradeLicenseValidity") == "YES")
+                            {
+                                <li><a href="~/Service/ServiceRequest?Service=nWktrAvJ6wplGflJFGjYQkfkfDk0lJXKAfgq4e8%3d">@localizer["NOC"]</a></li>
+                            }
+                        } *@
+                        <li><a href="~/Service/ServiceRequest?Service=nWktrAvJ6wplGflJFGjYQkfkfDk0lJXKAfgq4e8%3d">@localizer["NOC"]</a></li>
+                        @* <li><a href="~/Service/ConsumerInfo">Consumer Info</a></li> *@
+                        @if (HttpContextAccessor.HttpContext.Session.GetString("ContractorRole") == "YES" && HttpContextAccessor.HttpContext.Session.GetString("TradeLicenseValidity") == "YES")
+                        {
+                            <li><a href="~/Service/ServiceRequest?SubService=wWfc46MezJC9Yd7ySni%2f73zZPHzNzRVN9lI0UL2UzC8O44E%3d">@localizer["Drawing"]</a></li>
+                            <li><a href="~/Service/ServiceRequest?SubService=IWwFp9IkmXE7yzfGQiMXwQ2nr7%2fqjuWjg9aIIdq0GFbF6Mb3QqyzQ3BFAjwTxkfv">@localizer["Temporary Connection"]</a></li>
+                            <li><a href="~/Service/ServiceRequest?SubService=ZX7l%2ftumgeRG7An3TFgJ25aDHgWZX71QAq4Gyd0N7bqQudKbdVgQDw%3d%3d">@localizer["Shop Drawing"]</a></li>
+
+                            <li><a href="~/Service/ServiceRequest?SubService=tMa5iO1VvHjaciY70GjmHjvSRHPajGm05m7%2fEX8zP7O53m5wVlNj9CgvpB8%3d">@localizer["Final Connection"]</a></li>
+                            <li><a href="~/Service/ServiceRequest?SubService=MjWUvaL1ITQQKYZNVwzvwXTMeAA9POL1sMdblUrr5hPH">@localizer["Event"]</a></li>
+                            <li><a href="~/Service/ServiceRequest?SubService=brVsTf4jlg5%2bXj0PL8PkMj1XLHeyHZk9mkkim7TGQk1tV7pkQNBt3fVXVi7V5uNZQA%3d%3d">@localizer["Food Truck Connection"]</a></li>
+                            <li><a href="~/Service/LiveStock?SubService=kQ0Plw3dzrHNdZXDIBBHA2LfkLva3d6ANbNAJxhmA3DTgJXP2T94vPub7YQL6ygu0A%3d%3d">@localizer["Live Stock Connection"]</a></li>
+                            
+                            <li>
+                                <a class="has-arrow" href="javascript:void()" aria-expanded="false">@localizer["Inspection Appointment"]</a>
+                                <ul aria-expanded="false">
+                                    <li><a href="~/Service/CreateInspection?SubService=2i9XmMDS71j73rnCN5IA5%2bgFFraKc5Qe%2fPnvIbV5AmFuyqmLXdLPSN%2b2mLlBI%2bTXeFA%3d">@localizer["Electricity"]</a></li>
+                                    <li><a href="~/Service/CreateInspectionWater?Service=n78FI3%2fSmqr0xfkLXqXIlMZbXeDDBwQ10a%2bVSKw%3d">@localizer["Water"]</a></li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="has-arrow" href="javascript:void()" aria-expanded="false">@localizer["Customer Modification"]</a>
+                                <ul aria-expanded="false">
+                                    <li><a href="~/Service/AdditionalLoad?SubService=H%2flcTrMLRvaxdIgEGts6Pb8oVZqyh1x58uq%2b13PryzziS7gOvqkjjDsKFw%3d%3d">@localizer["Additional Load"]</a></li>
+                                    <li><a href="~/Service/AdditionalLoad?SubService=ktu0yng0vfFnweOWEAbD5NmgQF5jiv2cYn581nTKTh2zOsb0keTTvUCerrA%3d">@localizer["Additional Meter"]</a></li>
+
+                                    <li><a href="~/Service/AdditionalLoad?SubService=yur0%2fu%2bezS9AxpvSJdDw0LwMhd%2bT9Q2GlnCkZwa86uHw8Z1d1hbgtArdDeI%3d">@localizer["Decorating Shops"]</a></li>
+                                    <li><a href="~/Service/ApplyGasAlteration">@localizer["Gas Modification"]</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="has-arrow" href="javascript:void()" aria-expanded="false">@localizer["Letters"]</a>
+                                <ul aria-expanded="false">
+                                    <li><a href="~/Service/ServiceRequest?SubService=89cc6t0KF8eSow%2fSX209EZ7mOeJV%2bPCvzwE5iM0BsxLYlWyu7ldvP2G%2f8uaAotrmTlUc31VLVP8%3d">@localizer["Date of connection statement"]</a></li>
+                                    <li><a href="~/Service/ServiceRequest?SubService=V67TE7FkriNLLt8zFyaNGKOQ%2fhNOGmo8zRQ%2bgHklRKGxR1VTmmUB%2f7iJy2dUCz8IjPcutA%2boWmA%3d">@localizer["Completion Certificate Renew"]</a></li>
+
+
+                                </ul>
+                            </li>
+                        }
+
+                        <li>
+                            <a class="has-arrow" href="javascript:void()" aria-expanded="false">@localizer["Company"]</a>
+                            <ul aria-expanded="false">
+                                <li>
+                                    <a class="has-arrow" href="~/Service/ApplyService?SubService=LepBxCZuw7b6xRAXfCQk14oRl5YMC0uXdRw3gls19xcjlb9wh%2b8KNLaJAZAKLdt%2f" aria-expanded="false">@localizer["Registration"] </a>
+                                    <ul aria-expanded="false">
+                                       
+                                        @if (HttpContextAccessor.HttpContext.Session.GetString("ContractorRole") == "YES")
+                                        {
+                                            <li><a href="~/Service/ApplyService?SubService=FlQw3HF3zN0dKjG1wqhd244KmagPTL1ysVhv5KrsGtPVBF0%3d">@localizer["Renewal"]</a></li>
+                                            <li><a href="~/Service/ApplyService?SubService=uycg8fkDDv6wi9GPEiNP6TfeLrAsO247ECSA0XXoz9q93YXqBpGY">@localizer["Upgradation"]</a></li>
+                                            <li><a href="~/Service/ApplyService?SubService=kj52yrOnMzmY%2fvPMFBAq%2bTODVHzT%2foFs4k8f8l0pgE1mq5q36U8%3d">@localizer["Down-grade"]</a></li>
+                                            
+                                        }
+                                        else
+                                        {
+                                            <li><a href="~/Service/ApplyService?SubService=KiaElyc3Cry1YdtbaAuCz02s5X5ae%2frZk0TVYOw3QwsX7DT9ssOY%2fiJksnXuYbov">@localizer["New"]</a></li>
+                                        }
+
+                                    </ul>
+                                </li>
+                                @if (HttpContextAccessor.HttpContext.Session.GetString("ContractorRole") == "YES" && HttpContextAccessor.HttpContext.Session.GetString("TradeLicenseValidity") == "YES")
+                                {
+                                    <li>
+                                        <a class="has-arrow" href="~/Service/ApplyService?SubService=odAp3PTrvooqxCwWktvcJeg6O0OKwJ9cARY6qc6rAIYPpUfW7iI%3dss" aria-expanded="false">@localizer["Examination"] </a>
+                                        <ul aria-expanded="false">
+                                            <li><a href="~/Service/ApplyService?SubService=odAp3PTrvooqxCwWktvcJeg6O0OKwJ9cARY6qc6rAIYPpUfW7iI%3d">@localizer["Senior Eng"]</a></li>
+                                            <li><a href="~/Service/ApplyService?SubService=m1dNE88I4fl1AzHYLmiFc5uP1X4SklW4JMwXwbCtOFIx%2bfuMXnlCsGk%3d">@localizer["Assistant Eng"]</a></li>
+                                            <li><a href="~/Service/ApplyService?SubService=3%2bp%2blwagaNc%2fkcPDMRcGCj8SuzKr9Hns1mlLKQNF3g2RiORgq2q8aXJw">@localizer["Electrical Eng"]</a></li>
+                                            <li><a href="~/Service/ApplyService?SubService=o75TIEH6VTOn8op88cKl3KkVkgbdPthOWAgnZyN%2fSk3qJOaDxw4%3d">@localizer["Supervisor"]</a></li>
+                                        </ul>
+                                    </li>
+                                }
+
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </li>
+               
+                
+                <li>
+                    <a class="ai-icon" href="~/Service/ServiceStatus" aria-expanded="false">
+                        <i class="flaticon-018-clock"></i>
+                        <span class="nav-text">@localizer["Service Status"]</span>
+                    </a>
+                   
+                </li>
+                <li>
+                    <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                        <i class="flaticon-018-clock"></i>
+                        <span class="nav-text">@localizer["Portal Guide"]</span>
+                    </a>
+                    <ul aria-expanded="false">
+                        <li><a href="~/Documents/DeclarationandCommitment.pdf" target="_blank">@localizer["Application Form"]</a></li>
+                        <li><a href="~/Documents/ApplicationofConnectiondateservice.pdf" target="_blank">@localizer["Connection Date Form"]</a></li>
+                        <li><a href="~/Documents/UpdateMobileNumberInICP.pdf" target="_blank">@localizer["Update Mobile Number In ICP"]</a></li>
+                        <li><a href="~/Documents/SubmissionGuideConsultants.pdf" target="_blank">@localizer["Submission Guide Consultants"]</a></li>
+                        <li><a href="~/Documents/SubmissionGuideResToCom.pdf" target="_blank">@localizer["Guide for changing Residential to Commercial"]</a></li>
+                    </ul>
+                </li>
+                
+            }
+            else if (HttpContextAccessor.HttpContext.Session.GetString("UserType") == "RealEstateAgent")
+            {
+                <li>
+                    <a class="ai-icon" href="~/Service/ShowRealEstateInformation" aria-expanded="false">
+                        <i class="flaticon-025-dashboard"></i>
+                        <span class="nav-text">@localizer["Real Estate Info"]</span>
+                    </a>
+                </li>
+            }
+            else if (HttpContextAccessor.HttpContext.Session.GetString("UserType") == "MainContractor")
+            {
+                @if (HttpContextAccessor.HttpContext.Session.GetString("TradeLicenseValidity")=="YES")
+                {
+                    <li>
+                        <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                            <i class="flaticon-018-clock"></i>
+                            <span class="nav-text">@localizer["Service Request"]</span>
+                        </a>
+                        <ul aria-expanded="false">
+
+                            <li><a href="~/Service/ServiceRequest?Service=nWktrAvJ6wplGflJFGjYQkfkfDk0lJXKAfgq4e8%3d">@localizer["NOC"]</a></li>
+
+                        </ul>
+                    </li>
+                }
+               
+                
+                <li>
+                    <a class="ai-icon" href="~/Service/ServiceStatus" aria-expanded="false">
+                        <i class="flaticon-018-clock"></i>
+                        <span class="nav-text">@localizer["Service Status"]</span>
+                    </a>
+
+                </li>
+            }
+            else if (HttpContextAccessor.HttpContext.Session.GetString("UserType") == "Government")
+            {
+                if(HttpContextAccessor.HttpContext.Session.GetString("IsMainUser")=="True")
+                {
+                    <li>
+                        <a class="ai-icon" href="~/Government/ManageUserList" aria-expanded="false">
+                            <i class="flaticon-018-clock"></i>
+                            <span class="nav-text">@localizer["Manage Users"]</span>
+                        </a>
+
+
+                    </li>
+                }
+                <li>
+                <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                    <i class="flaticon-018-clock"></i>
+                    <span class="nav-text">@localizer["Service Request"]</span>
+                </a>
+                    <ul aria-expanded="false">
+                        <li><a href="~/Government/ServiceRequest?Service=nWktrAvJ6wplGflJFGjYQkfkfDk0lJXKAfgq4e8%3d">@localizer["NOC"]</a></li>
+                        <li><a href="~/Government/ServiceRequest?SubService=wWfc46MezJC9Yd7ySni%2f73zZPHzNzRVN9lI0UL2UzC8O44E%3d">@localizer["Drawing"]</a></li>
+                        <li><a href="~/Government/ServiceRequest?SubService=IWwFp9IkmXE7yzfGQiMXwQ2nr7%2fqjuWjg9aIIdq0GFbF6Mb3QqyzQ3BFAjwTxkfv">@localizer["Temporary Connection"]</a></li>
+                        <li><a href="~/Government/ServiceRequest?SubService=ZX7l%2ftumgeRG7An3TFgJ25aDHgWZX71QAq4Gyd0N7bqQudKbdVgQDw%3d%3d">@localizer["Shop Drawing"]</a></li>
+
+                        <li><a href="~/Government/ServiceRequest?SubService=tMa5iO1VvHjaciY70GjmHjvSRHPajGm05m7%2fEX8zP7O53m5wVlNj9CgvpB8%3d">@localizer["Final Connection"]</a></li>
+                    </ul>
+                </li>
+               
+                <li>
+                    <a class="ai-icon" href="javascript:void()" aria-expanded="false">
+                        <i class="flaticon-018-clock"></i>
+                        <span class="nav-text">@localizer["Manage Projects"]</span>
+                    </a>
+                    <ul aria-expanded="false">
+                        <li><a href="~/Government/ManageConsultant">@localizer["Assign Consultant/Contractor"]</a></li>
+                        <li><a href="~/Government/ServiceStatus">@localizer["Projects"]</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                        <i class="flaticon-018-clock"></i>
+                        <span class="nav-text">@localizer["Portal Guide"]</span>
+                    </a>
+                    <ul aria-expanded="false">
+                        <li><a href="~/Documents/DeclarationandCommitment.pdf" target="_blank">@localizer["Application Form"]</a></li>
+                        <li><a href="~/Documents/ApplicationofConnectiondateservice.pdf" target="_blank">@localizer["Connection Date Form"]</a></li>
+                        <li><a href="~/Documents/UpdateMobileNumberInICP.pdf" target="_blank">@localizer["Update Mobile Number In ICP"]</a></li>
+                        <li><a href="~/Documents/SubmissionGuideGovernment.pdf" target="_blank">@localizer["Submission Guide Government"]</a></li>
+
+                    </ul>
+                </li>
+            }
+            else if (HttpContextAccessor.HttpContext.Session.GetString("UserType") == "Admin")
+            {
+                <li>
+                    <a class="ai-icon" href="~/Admin/CreateGovernmentUser" aria-expanded="false">
+                        <i class="flaticon-025-dashboard"></i>
+                        <span class="nav-text">@localizer["Create User"]</span>
+                    </a>
+                    <a class="ai-icon" href="~/Government/ListGovernmentConsultant" aria-expanded="false">
+                        <i class="flaticon-018-clock"></i>
+                        <span class="nav-text">@localizer["Government Project Consultant"]</span>
+                    </a>
+                </li>
+            }
+            else
+            {
+                <li>
+                    <a class="ai-icon" href="~/Service/ServiceStatus" aria-expanded="false">
+                        <i class="flaticon-018-clock"></i>
+                        <span class="nav-text">@localizer["Service Status"]</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <i class="flaticon-018-clock"></i>
+                        <span class="nav-text">@localizer["Service Request"]</span>
+                    </a>
+                    <ul aria-expanded="false">
+                        <li>
+                            <a href="~/Service/ApplyService?SubService=eqKyO%2fUyV%2b%2fLlIHxTTBOs8Qi8SjFVlOL77W9QbjzvsnHRf847BvvQZwrGmUpyg%3d%3d" aria-expanded="false">
+                                <span class="nav-text">@localizer["Demolition Request"]</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="javascript:void()" aria-expanded="false">@localizer["Customer Modification"]</a>
+                            <ul aria-expanded="false">
+                                <li><a href="~/Service/AdditionalLoad?SubService=H%2flcTrMLRvaxdIgEGts6Pb8oVZqyh1x58uq%2b13PryzziS7gOvqkjjDsKFw%3d%3d">@localizer["Additional Load"]</a></li>
+                                <li><a href="~/Service/AdditionalLoad?SubService=ktu0yng0vfFnweOWEAbD5NmgQF5jiv2cYn581nTKTh2zOsb0keTTvUCerrA%3d">@localizer["Additional Meter"]</a></li>
+                                <li><a href="~/Service/AdditionalLoad?SubService=yur0%2fu%2bezS9AxpvSJdDw0LwMhd%2bT9Q2GlnCkZwa86uHw8Z1d1hbgtArdDeI%3d">@localizer["Decorating Shops"]</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="javascript:void()" aria-expanded="false">@localizer["Change Connection Type"]</a>
+                            <ul aria-expanded="false">
+                                <li><a href="~/Service/ApplyService?SubService=4b7RfbgjVJ%2b4MA43GaLZdw22lt3JpgqiSdNHfqfPcBPS1uz5cVpXuEJ1lHSxrDthhbjGjQtPp8gDSFHBSjk%3d">@localizer["Residential to Commercial - Normal"]</a></li>
+                                <li><a href="~/Service/ApplyService?SubService=YBft0kXqpbZbsZ9OAAQrbynA2V%2bY8uXEwgs5Ug6%2b5fWmmAZ7pDoc2nLcT%2bpb%2brXh4kmOzfp%2fQJ8WUHr9KS0%3d">@localizer["Residential to Commercial - Urgent"]</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="javascript:void()" aria-expanded="false">@localizer["Borewell Request"]</a>
+                            <ul aria-expanded="false">
+                                <li><a href="~/Service/ApplyService?SubService=OFe%2f%2f2VH51D2KnWjYpxndk9YAfUhHkOcceQcCX%2bcQuLsYly3szcV2QBZGZEbIvUuEsa4CA%3d%3d">@localizer["Farms"]</a></li>
+                                <li><a href="~/Service/ApplyService?SubService=D1axks9EfsNAaw4bqj7p8W9ilPL3WtCpK1eYMnT4TWxNAE%2bHmb%2bIomRiYTH3f%2ba%2fJJGGLBsprbxerg%3d%3d">@localizer["Commercials"]</a></li>
+
+                            </ul>
+                        </li>
+                            <li><a href="~/Owner/ServiceRequest?SubService=MjWUvaL1ITQQKYZNVwzvwXTMeAA9POL1sMdblUrr5hPH">@localizer["Event"]</a></li>
+                        
+                    </ul>
+                </li>
+                 <li>
+                    <a class="ai-icon" href="~/Service/OwnerInformation" aria-expanded="false">
+                        <i class="flaticon-018-clock"></i>
+                        <span class="nav-text">@localizer["Owner Info"]</span>
+                    </a>
+                    <a class="ai-icon" href="~/Service/UpdateRealEstate" aria-expanded="false">
+                        <i class="flaticon-018-clock"></i>
+                        <span class="nav-text">@localizer["Add Real Estate"]</span>
+                    </a>
+                    <a class="ai-icon" href="~/Service/ShowRealEstateMappedAreas" aria-expanded="false">
+                        <i class="flaticon-018-clock"></i>
+                        <span class="nav-text">@localizer["Manage Real Estate"]</span>
+                    </a>
+                   
+                    </li>
+                <li>
+                    <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                        <i class="flaticon-018-clock"></i>
+                        <span class="nav-text">@localizer["Portal Guide"]</span>
+                    </a>
+                    <ul aria-expanded="false">
+                        <li><a href="~/Documents/SubmissionGuideResToCom.pdf" target="_blank">@localizer["Guide for changing Residential to Commercial"]</a></li>
+                    </ul>
+                </li>
+            }
+             
+            @* <li>
+                <a href="@Url.Action("Widget","ventic")" class="ai-icon" aria-expanded="false">
+                    <i class="flaticon-013-checkmark"></i>
+                    <span class="nav-text">Change Password</span>
+                </a>
+            </li> *@
+            
+        </ul>
+     
+       @*  <div class="copyright">
+            <p><strong>SEWA</strong> © 2023 All Rights Reserved</p>
+         
+        </div> *@
+    </div>
+</div>
+<!--**********************************
+    Sidebar end
+***********************************-->

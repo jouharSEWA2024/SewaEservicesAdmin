@@ -1,0 +1,94 @@
+﻿@model SEWAEContractorAdmin.Models.AdminLoginViewModel
+@{
+    @using Microsoft.AspNetCore.Http.Features
+    @using Microsoft.AspNetCore.Mvc.Localization;
+    @using Microsoft.AspNetCore.Localization
+
+    ViewData["Title"] = "Admin Login";
+    Layout = "~/Views/Shared/_LayoutVenticBlank.cshtml";
+    @inject IViewLocalizer localizer
+    string culture = "", uiculture = "", url = "";
+    if (Context.Request.QueryString.HasValue)
+    {
+        url = Context.Request.QueryString.Value;
+        culture = Context.Request.Query["culture"];
+        uiculture = Context.Request.Query["ui-culture"];
+    }
+    var requestCulture = Context.Features.Get<IRequestCultureFeature>();
+}
+<script src="~/assets/js/jquery-3.6.0.min.js"></script>
+<div class="authincation ">
+    <div class="container ">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6">
+                <div class="authincation-content">
+                    <div class="row no-gutters">
+                        <div class="col-lg-12">
+                            <div class="auth-form">
+                                <div class="text-center mb-3">
+                                    <a href="@Url.Action("AdminLogin","Admin")"><img src="~/ventic/images/SEWA_Logo_2024.png" alt="SEWA_LOGO" width="60%" /></a>
+                                </div>
+                                <h4 class="text-center mb-4">@localizer["Sign in your account"]</h4>
+                                @if (Model.ErrorCode != null && Model.ErrorType == "Success")
+                                {
+                                    <div id="Error">
+                                        <div class="row d-flex align-content-center align-items-center">
+                                            <div class="alert alert-primary text-dark" role="alert">
+                                                <h6 class="text-dark text-center">
+                                                    @Model.ErrorMessage
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                                @if (Model.ErrorCode != null && Model.ErrorType == "Fail")
+                                {
+                                    <div id="Error">
+                                        <div class="row d-flex align-content-center align-items-center">
+                                            <div class="alert alert-secondary text-dark" role="alert">
+                                                <h6 class="text-dark text-center">
+                                                    @Model.ErrorMessage
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                                <form action="@Url.Action("AdminLogin","Admin")" method="post">
+                                    <div class="row">
+                                        <div class="mb-3">
+                                            <label class="mb-1 form-label">@localizer["UserName"]</label>
+                                            <input type="text" class="form-control" asp-for="Username" maxlength="50" />
+                                            <span class="text-danger" asp-validation-for="Username"></span>
+                                        </div>
+                                        <div class="mb-3 position-relative">
+                                            <label class="mb-1 form-label">@localizer["Password"]</label>
+                                            <input type="password" id="dz-password" class="form-control" asp-for="Password">
+                                            <span class="show-pass eye">
+
+                                                <i class="fa fa-eye-slash"></i>
+                                                <i class="fa fa-eye"></i>
+
+                                            </span>
+                                            <span class="text-danger" asp-validation-for="Password"></span>
+                                        </div>
+                                        
+                                    </div>
+                                   
+                                    <div id="LoginButton">
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-primary btn-block">@localizer["Sign Me In"]</button>
+                                        </div>
+                                    </div>
+
+
+                                </form>
+                               
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

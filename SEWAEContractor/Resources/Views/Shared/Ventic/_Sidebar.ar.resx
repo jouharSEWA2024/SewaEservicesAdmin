@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add Consultant" xml:space="preserve">
+    <value>إضافة استشاري</value>
+  </data>
+  <data name="Add Real Estate" xml:space="preserve">
+    <value>إضافة عقار</value>
+  </data>
+  <data name="Additional Load" xml:space="preserve">
+    <value>الحمل الإضافي</value>
+  </data>
+  <data name="Additional Meter" xml:space="preserve">
+    <value>عداد إضافي</value>
+  </data>
+  <data name="Application Form" xml:space="preserve">
+    <value>نموذج الطلب</value>
+  </data>
+  <data name="Assign Consultant/Contractor" xml:space="preserve">
+    <value>تعيين استشاري/مقاول</value>
+  </data>
+  <data name="Assistant Eng" xml:space="preserve">
+    <value>مساعد مهندس</value>
+  </data>
+  <data name="Borewell Request" xml:space="preserve">
+    <value>طلب بورويل</value>
+  </data>
+  <data name="Change Connection Type" xml:space="preserve">
+    <value>تغيير نوع الاتصال</value>
+  </data>
+  <data name="Commercials" xml:space="preserve">
+    <value>لمشاريع المقاولات الحكومية ومشاريع الطرق (مؤقتة)</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>تسجيل الشركات</value>
+  </data>
+  <data name="Completion Certificate Renew" xml:space="preserve">
+    <value>تجديد شهادة استكمال المشروع</value>
+  </data>
+  <data name="Connection Date Form" xml:space="preserve">
+    <value>نموذج تاريخ التوصيل</value>
+  </data>
+  <data name="Create User" xml:space="preserve">
+    <value>إنشاء حساب</value>
+  </data>
+  <data name="Customer Modification" xml:space="preserve">
+    <value>التعديلات </value>
+  </data>
+  <data name="Date of connection statement" xml:space="preserve">
+    <value>تاريخ بيان التوصيل</value>
+  </data>
+  <data name="Decorating Shops" xml:space="preserve">
+    <value>تصاريح الديكور</value>
+  </data>
+  <data name="Demolition Request" xml:space="preserve">
+    <value>طلب الهدم</value>
+  </data>
+  <data name="Down-grade" xml:space="preserve">
+    <value>تخفيض الفئة</value>
+  </data>
+  <data name="Drawing" xml:space="preserve">
+    <value>اعتماد مخطط</value>
+  </data>
+  <data name="Electrical Eng" xml:space="preserve">
+    <value>مهندس كهرباء</value>
+  </data>
+  <data name="Electricity" xml:space="preserve">
+    <value>الكهرباء</value>
+  </data>
+  <data name="Event" xml:space="preserve">
+    <value>فعالية</value>
+  </data>
+  <data name="Examination" xml:space="preserve">
+    <value>الفحص</value>
+  </data>
+  <data name="Farms" xml:space="preserve">
+    <value>للمنازل والمزارع الزراعية</value>
+  </data>
+  <data name="Final Connection" xml:space="preserve">
+    <value>التوصيل النهائي</value>
+  </data>
+  <data name="Food Truck Connection" xml:space="preserve">
+    <value>توصيل شاحنة طعام</value>
+  </data>
+  <data name="Gas Modification" xml:space="preserve">
+    <value>تغيير الغاز</value>
+  </data>
+  <data name="Guide for changing Residential to Commercial" xml:space="preserve">
+    <value>خطوات تحويل السكني إلى تجاري</value>
+  </data>
+  <data name="Inspection Appointment" xml:space="preserve">
+    <value>موعد الفحص</value>
+  </data>
+  <data name="Letters" xml:space="preserve">
+    <value>الرسائل</value>
+  </data>
+  <data name="Live Stock Connection" xml:space="preserve">
+    <value>العزب</value>
+  </data>
+  <data name="Manage Premise" xml:space="preserve">
+    <value>إدارة الفرضية</value>
+  </data>
+  <data name="Manage Projects" xml:space="preserve">
+    <value>إدارة المشاريع</value>
+  </data>
+  <data name="Manage Real Estate" xml:space="preserve">
+    <value>إدارة العقارات</value>
+  </data>
+  <data name="Manage Users" xml:space="preserve">
+    <value>إدارة المستخدمين</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>جديد</value>
+  </data>
+  <data name="NOC" xml:space="preserve">
+    <value>شهادة عدم ممانعة</value>
+  </data>
+  <data name="Owner Info" xml:space="preserve">
+    <value>معلومات المالك</value>
+  </data>
+  <data name="Portal Guide" xml:space="preserve">
+    <value>دليل البوابة</value>
+  </data>
+  <data name="Portal Guide Arabic" xml:space="preserve">
+    <value>دليل البوابة باللغة العربية</value>
+  </data>
+  <data name="Portal Guide English" xml:space="preserve">
+    <value>دليل البوابة باللغة الإنجليزية</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>المشاريع</value>
+  </data>
+  <data name="Real Estate Info" xml:space="preserve">
+    <value>المعلومات العقارية</value>
+  </data>
+  <data name="Registration" xml:space="preserve">
+    <value>التسجيل</value>
+  </data>
+  <data name="Renewal" xml:space="preserve">
+    <value>التجديد</value>
+  </data>
+  <data name="Residential to Commercial- Normal" xml:space="preserve">
+    <value>تحويل سكني إلى تجاري- عادي</value>
+  </data>
+  <data name="Residential to Commercial- Urgent" xml:space="preserve">
+    <value>تحويل سكني إلى تجاري- عاجل</value>
+  </data>
+  <data name="Senior Eng" xml:space="preserve">
+    <value>مهندس أول</value>
+  </data>
+  <data name="Service Request" xml:space="preserve">
+    <value>طلب الخدمة</value>
+  </data>
+  <data name="Service Status" xml:space="preserve">
+    <value>حالة الخدمة</value>
+  </data>
+  <data name="Shop Drawing" xml:space="preserve">
+    <value>تحديث اعتماد مخطط </value>
+  </data>
+  <data name="Submission Guide Consultants" xml:space="preserve">
+    <value>دليل الخدمات لاستشاريين</value>
+  </data>
+  <data name="Submission Guide Government" xml:space="preserve">
+    <value>دليل الخدمات للجهات الحكومية</value>
+  </data>
+  <data name="Supervisor" xml:space="preserve">
+    <value>مشرف</value>
+  </data>
+  <data name="Temporary Connection" xml:space="preserve">
+    <value>التوصيل المؤقت</value>
+  </data>
+  <data name="Update Mobile Number In ICP" xml:space="preserve">
+    <value>يرجى تحديث رقم الجوال في الهيئة الاتحادية للهوية والجنسية ICP</value>
+  </data>
+  <data name="Upgradation" xml:space="preserve">
+    <value>تحديث الفئة</value>
+  </data>
+  <data name="Water" xml:space="preserve">
+    <value>المياه</value>
+  </data>
+</root>
