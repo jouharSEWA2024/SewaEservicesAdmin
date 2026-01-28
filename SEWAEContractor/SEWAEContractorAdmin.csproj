@@ -21,13 +21,13 @@
 
   <ItemGroup>
     <Reference Include="SEWAEContractorApplication">
-      <HintPath>..\..\eservices portal\SEWAEContractorInfrastructure\bin\Debug\net7.0\SEWAEContractorApplication.dll</HintPath>
+      <HintPath>..\..\..\EServicesV1\SewaEservices\SEWAEContractorApplication\bin\Debug\net7.0\SEWAEContractorApplication.dll</HintPath>
     </Reference>
     <Reference Include="SEWAEContractorCore">
-      <HintPath>..\..\eservices portal\SEWAEContractorCore\bin\Debug\net7.0\SEWAEContractorCore.dll</HintPath>
+      <HintPath>..\..\..\EServicesV1\SewaEservices\SEWAEContractorCore\bin\Debug\net7.0\SEWAEContractorCore.dll</HintPath>
     </Reference>
     <Reference Include="SEWAEContractorInfrastructure">
-      <HintPath>..\..\eservices portal\SEWAEContractorInfrastructure\bin\Debug\net7.0\SEWAEContractorInfrastructure.dll</HintPath>
+      <HintPath>..\..\..\EServicesV1\SewaEservices\SEWAEContractorInfrastructure\bin\Debug\net7.0\SEWAEContractorInfrastructure.dll</HintPath>
     </Reference>
   </ItemGroup>
 
